@@ -45,7 +45,7 @@ namespace Kordamine
             Console.WriteLine("Ülesanne 1 ");
             int N = rnd.Next(2, 8);
             int M = rnd.Next(9, 15);
-            int[] mass = new int[M - N];
+            int[] mass = new int[M+1 - N];
             Console.WriteLine(N);
             Console.WriteLine(M);
             int j = 0;

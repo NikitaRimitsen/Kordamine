@@ -40,7 +40,9 @@ namespace Kordamine
 
             Console.ReadLine();*/
 
-            Random rnd = new Random();
+            /*-----------------Zadanie--------------*/
+
+            /*Random rnd = new Random();
 
             Console.WriteLine("Ülesanne 1 ");
             int N = rnd.Next(2, 8);
@@ -60,25 +62,81 @@ namespace Kordamine
             foreach (var m in mass)
             {
                 Console.Write(" {0}", m);
-            }
+            }*/
 
             /*---------------------------*/
-
-            Console.WriteLine("Напишите первое число: ");
-            string number1 = Console.ReadLine();
-            Console.WriteLine("Напишите второе число: ");
-            string number2 = Console.ReadLine();
-            Console.WriteLine("Напишите третье число: ");
-            string number3 = Console.ReadLine();
-            Console.WriteLine("Напишите четвётрое число: ");
-            string number4 = Console.ReadLine();
-            Console.WriteLine("Напишите пятое число: ");
-            string number5 = Console.ReadLine();
-
-            Console.ReadLine();
-
+            /*Ülessane 2*/
+            /*int arr = int cislo = 5;
             
 
+            for (int i = 0; i < 5; i++)
+	        {
+                Console.WriteLine("Kirjuta number: ");
+                int cislo = Convert.ToInt32(Console.ReadLine());
+                arr[i] = cislo;
+	        }
+            int summa = 0;
+            int multi = 1;
+            foreach (var item in arr)
+	        {
+                summa += item;
+                multi = item * multi;
+	        }
+            Console.WriteLine($"Nums AVG = {arr.Average()}\nNums Summa = {summa}nNums multiplied = {multi}");*/
+
+            
+            
+            /*int mult = 1;
+            int sum = 0;
+            for (int i = 0; i < 5; i++)
+			{
+                Console.WriteLine("Kirjuta number: ");
+                int sim = Convert.ToInt32(Console.ReadLine());
+                sum += sim;
+                mult = smt * mult;
+			}
+            double avg = sum / 5;
+            Console.WriteLine($"Nums AVG = {avg}\nNums Summa = {sum}nNums multiplied = {mult}");*/
+
+
+            /*----------------------------*/
+            /*Ülessane 3*/
+            /*string slon;
+            do{
+
+                Console.WriteLine("Kupi slona:");
+                slon =Console.ReadLine();
+
+            } while(slon != "slon");
+            Console.WriteLine("Spasibo");*/
+
+
+            Random rnd = new Random();
+
+            int cifra = rnd.Next(1,10);
+            Console.WriteLine(cifra);
+            int podcet = 0;
+            int cisla;
+            do{
+
+                Console.WriteLine("Kakoe cislo ja zagadal?:");
+                cisla =Console.ReadLine();
+                podcet + 1;
+
+            } while(podcet != 5 || cisla==cifra);
+            if (podcet = 5 || cisla==cifra)
+	        {
+                Console.WriteLine("Ne ugadal");
+	        }
+            else
+	        {
+                Console.WriteLine("Ugadal");
+	        }
+
+
+
+
+            Console.ReadLine();
         }
     }
 }
